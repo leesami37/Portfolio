@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    background: #1c1c1c;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn {
+    background: #6366f1;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #4f46e5;
+}
+
+.download i {
+    margin-right: 8px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Tech Stack Section */
+.tech-stack {
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.tech-stack h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+
+.stack-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.stack-item i {
+    font-size: 50px;
+    color: #6366f1;
+}
+
+.stack-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.github-link {
+    color: #6366f1;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.github-link i {
+    margin-right: 8px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 50px 0;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a i {
+    color: black;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact p a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal Line */
+.section-line {
+    width: 80%;
+    margin: 30px auto;
+    border: 0;
+    border-top: 2px solid #6366f1;
+    opacity: 0.5;
+}
